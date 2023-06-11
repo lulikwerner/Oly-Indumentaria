@@ -1,22 +1,25 @@
 //Va a contener el ItemContaoner y el Favoritos Container
 import React from 'react';
-import ItemContainer from '../ItemContainer/ItemContainer';
+import  ItemListContainer  from '../ItemListContainer/ItemListContainer';
 import FavoritosContainer from '../FavoritosContainer/FavoritosContainer';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../Container/Container.css'
 
-function CustomContainer() {
 
+function CustomContainer() {
   return (
     <Container className="container">
-
       <Row>
         <Col>
           <div className="itemCont">
-            <ItemContainer />
+            <Row>
+              <Col>
+                <ItemListContainer />
+              </Col>
+            </Row>
           </div>
         </Col>
-      </Row>    
+      </Row>
       <Row>
         <Col>
           <div className="favoritosCont">
@@ -27,5 +30,6 @@ function CustomContainer() {
     </Container>
   );
 }
+
 
 export default CustomContainer;
