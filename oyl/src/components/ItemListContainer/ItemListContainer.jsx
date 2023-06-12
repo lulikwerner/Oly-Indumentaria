@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ItemList from '../ItemList/ItemList';
 import { gFetch } from '../../utils/gFetch';
-import './ItemListContainer.css';
+import '../ItemListContainer/ItemListContainer.css';
 
 const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
@@ -18,7 +18,7 @@ const ItemListContainer = () => {
 
   return (
     <div className="container">
-      <ItemList className="custom-img-class" Products={products} />
+      <ItemList className="custom-img-class" products={products} />
     </div>
   );
 };

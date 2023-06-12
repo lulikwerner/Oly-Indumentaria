@@ -32,7 +32,7 @@ const Item = ({ prod }) => {
     <div>
       <Card className="cardhover">
         <Card.Img
-          className="img"
+          className="card-img"
           variant="top"
           src={img}
           onClick={handleImageClick}
