@@ -15,7 +15,7 @@ function Favoritos() {
   return (
     <div className="favoritos-container">
       <div className="favoritos-row">
-        <img className={flor} src={flor}/>
+        <img className= "flor" src={flor}/>
         <img src={Recurso17} alt="Favorite" className="favoritos-col" onClick={() => handleImageClick('https://www.instagram.com/oyl_indumentariacanchera/')} />
         <img src={Recurso16} alt="Favorite" className="favoritos-col" onClick={() => handleImageClick('https://www.instagram.com/oyl_indumentariacanchera/')} />
         <img src={Recurso15} alt="Favorite" className="favoritos-col" onClick={() => handleImageClick('https://www.instagram.com/oyl_indumentariacanchera/')} />

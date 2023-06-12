@@ -14,7 +14,7 @@ let products = [
     if (condition) {
         setTimeout(() => {
             res(products);
-          }, 2000);
+          });
         
     }else {
         rej('error en el fetch')

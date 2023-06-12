@@ -1,19 +1,20 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Item from './components/Item/Item'
+import Footer from './components/Footer/Footer'
 import CustomContainer from './components/Container/Container'
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
+
+    <BrowserRouter>
         <CustomContainer/>
-      
-    </>
+        <Footer/>
+      </BrowserRouter>
+
   )
 }
 
-export default App
+export default App;

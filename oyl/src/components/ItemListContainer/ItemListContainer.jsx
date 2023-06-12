@@ -1,24 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ItemList from '../ItemList/ItemList';
-import { useEffect, useState} from 'react';
 import { gFetch } from '../../utils/gFetch';
+import './ItemListContainer.css';
 
-const ItemContainer= () => {
-  const [products, setProducts] = useState([])
+const ItemListContainer = () => {
+  const [products, setProducts] = useState([]);
+
   useEffect(() => {
-   gFetch()
-.then(resp => setProducts(resp))
-.catch (err => console.log(err)) 
-.finally ( () => console.log('at the end'))
+    gFetch()
+    .then(resp => {
+      setProducts(resp);
+      console.log(resp); // Log the products array
+    })
+      .catch(err => console.log(err))
+      .finally(() => console.log('at the end'));
+  }, []);
 
-  },[]);
-console.log(products)
   return (
-    
-    <div>
-      <ItemList Products ={products}/>
+    <div className="container">
+      <ItemList className="custom-img-class" Products={products} />
     </div>
   );
-}
+};
 
-export  default ItemContainer ;
+export default ItemListContainer;
+

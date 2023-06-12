@@ -1,20 +1,23 @@
 import React from 'react';
-import Item from '../Item/Item';
-import { Row, Col } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
+import '../ItemList/ItemList.css';
 
 const ItemList = ({ Products }) => {
   return (
-    <div>
-      <Row>
-        {Products.map((prod, index) => (
-          <Col key={prod.id} sm={6} md={6} lg={6}>
-            <Item prod={prod} />
-          </Col>
-        ))}
-      </Row>
+    <div className="product-con">
+      {Products.map((prod) => (
+        <Card key={prod.id} className="product">
+          <Card.Img variant="top" src={prod.img} alt="Product" className="custom-img" />
+        </Card>
+      ))}
     </div>
   );
 };
 
 export default ItemList;
+
+
+
+
+
 
