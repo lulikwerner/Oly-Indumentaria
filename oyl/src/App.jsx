@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import Footer from './components/Footer/Footer'
 import CustomContainer from './components/Container/Container'

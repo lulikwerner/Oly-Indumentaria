@@ -10,7 +10,7 @@ function FavoritosContainer() {
       };
   return (
     <div>
-        <div>
+        <div className="titleFavs">
         <h1 >Nuestros Favs!</h1>
         </div>
         <Favoritos/>
