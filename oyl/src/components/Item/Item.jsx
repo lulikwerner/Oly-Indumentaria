@@ -30,7 +30,7 @@ const Item = ({ prod }) => {
   return (
     <div>
       <Card className="cardhover">
-        <Card.Img className="card-img" variant="top" src={img} onClick={handleImageClick} />
+        <img className="card-img" variant="top" src={img} onClick={handleImageClick} />
       </Card>
       {id === 8 && (
        

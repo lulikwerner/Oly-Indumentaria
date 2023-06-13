@@ -3,5 +3,10 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-
+}
+.footer-container {
+  height:284px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+  grid-gap: 0rem; /* Adjust the gap between columns */
 }

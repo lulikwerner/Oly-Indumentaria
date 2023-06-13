@@ -1,8 +1,99 @@
-.place{
-    width:1280px;
-
+.back-down{
     background-color: #F5CFA2;
+    width:1280px;
 }
-.cont-2{
+
+.top-container{
     background-color: #FAE6CE;
+    width:1280px;
 }
+.container-f{
+
+    background-color: #FAE6CE !important;
+    margin-left: 0% !important;
+    margin-bottom: 0%!important ;
+}
+.titR{
+    margin-top: 10%;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+.tit{
+    margin-top: 12%;
+
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
+}
+p {
+    margin-bottom: 5px !important;
+    color:#101010;
+    font-family: 'Poppins', sans-serif;
+    size:12px;
+    line-height:18px;
+    margin-bottom: 5%!important ;
+  }
+  .location-container {
+    display: flex;
+    align-items: center;
+    margin-top: 0%;
+  }
+  .location-icon{
+    color:#F5037C;
+    margin-right: 10px;
+    font-weight: bold;
+    
+  }
+  .bold-text {
+    font-weight: bold;
+    font-size: 12px;
+  }
+  
+  .time-text {
+    font-size: 12px;
+    margin-left: 12%;
+  }
+  
+  .text-reset{
+    font-size:12px;
+  }
+  .metodos-pago {
+    margin-top: 12%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .metodos-pago span {
+    margin-left: 5px; /* Adjust the spacing between the icon and the text as needed */
+  }
+  .social-icon a {
+    margin-right: 10px; /* Adjust the value as per your desired spacing */
+  }
+  .social-icon a:hover .icon {
+    color: BLACK; /* Change the color to your desired hover color */
+  }
+  .icon{
+
+    color:#F5037C;
+  }
+  .line-container {
+    display: flex;
+    height: 53px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+  
+  .line-container p {
+    width:1280px;
+    margin-bottom: 8%;
+    flex-basis: 50%;
+    text-align: center;
+  }
+  .bottom{
+    font-Size: 14px;
+ 
+  }
+  

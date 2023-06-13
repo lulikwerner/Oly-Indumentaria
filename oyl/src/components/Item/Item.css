@@ -1,3 +1,10 @@
+.card {
+  background: none;
+  border: none;
+  width: 101%;
+  margin-bottom: 2%;
+}
+
 .card-img {
   position: relative;
   z-index: 1;
@@ -8,6 +15,7 @@
   bottom: 0%;
   filter: drop-shadow(0px 4px 8.5px rgba(0, 0, 0, 0.25))
     drop-shadow(2px 0px 8px rgba(0, 0, 0, 0.25));
+ 
 }
 
 .card-img:hover {
@@ -31,7 +39,6 @@
   z-index: 1;
 }
 
-
 .close-icon {
   position: absolute;
   right: 2%;
@@ -46,5 +53,8 @@
   cursor: pointer;
   color: #F5037C;
 }
+.card-img{
 
+  width: 100%;
+}
 

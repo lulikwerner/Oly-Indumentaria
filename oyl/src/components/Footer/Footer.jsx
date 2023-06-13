@@ -1,128 +1,136 @@
 import React from 'react';
-import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 import '../Footer/Footer.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import { TiLocationOutline } from 'react-icons/ti';
+import { BsFacebook, BsInstagram, BsTiktok } from 'react-icons/bs'
+import {GoTriangleRight} from 'react-icons/go'
 
 
-function Footer () {
+
+function Footer() {
   return (
-    <MDBFooter bgColor="light" className="text-center text-lg-start text-muted place">
-      <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        <div className="me-5 d-none d-lg-block">
-          <span>Get connected with us on social networks:</span>
-        </div>
+    <footer className="footer">
+      <section className="top-container">
+        <div className="containe-f text-center text-md-start mt-5 ">
+          <div className="row mt-3 top-container tit">
+            <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 ">
+              <h6 className="text-uppercase fw-bold mb-4 titR">
+                <i className="fas fa-gem me-3 "></i>RETIRO COMPRA ONLINE</h6>
+              <div className="location-container">
+                <p className="moticon">
+                  <TiLocationOutline className="location-icon" />
+                  <span className="bold-text">Héctor Arregui 2523, José C. Paz</span><br></br>
+                  <span className="time-text">Lunes a Viernes 16:00 a 19:30</span>
+                </p>
+              </div>
+              <div className="location-container">
+                <p className="moticon">
+                  <TiLocationOutline className="location-icon" />
+                  <span className="bold-text">Nazca 2779 1B, Villa del Parque </span><br></br>
+                  <span className="time-text">Lunes a Viernes 9:30 a 17:00</span>
+                </p>
+              </div>
+              <div className="location-container">
+                <p className="moticon">
+                  <TiLocationOutline className="location-icon" />
+                  <span className="bold-text">Héctor Arregui 2523, José C. Paz </span><br></br>
+                  <span className="time-text">Lunes a Viernes 16:00 a 19:30</span>
+                </p>
+              </div>
 
-        <div>
-          <a href='' className="me-4 text-reset">
-            <MDBIcon fab icon="facebook-f" />
-          </a>
-          <a href='' className="me-4 text-reset">
-            <MDBIcon fab icon="twitter" />
-          </a>
-          <a href='' className="me-4 text-reset">
-            <MDBIcon fab icon="google" />
-          </a>
-          <a href='' className="me-4 text-reset">
-            <MDBIcon fab icon="instagram" />
-          </a>
-          <a href='' className="me-4 text-reset">
-            <MDBIcon fab icon="linkedin" />
-          </a>
-          <a href='' className="me-4 text-reset">
-            <MDBIcon fab icon="github" />
-          </a>
+
+            </div>
+            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 className="text-uppercase fw-bold mb-4 metodos-pago">
+                <span>MÉTODOS DE PAGO</span></h6>
+              <p>
+                <a className="text-reset">
+                  EFECTIVO
+                </a>
+              </p>
+              <p>
+                <a className="text-reset">
+                  TRANSFERENCIAS
+                </a>
+              </p>
+              <p>
+                <a className="text-reset">
+                  Mercado Pago (con recargos)
+                </a>
+              </p>
+              <p>
+                <a className="text-reset">
+                  UALÁ (Cuotas sin interés)
+                </a>
+              </p>
+            </div>
+            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 className="text-uppercase fw-bold mb-4 tit">SEGUINOS</h6>
+
+
+              <div className="social-icon">
+                <a className="social-icon facebook" href="https://www.facebook.com/profile.php?id=100070583535301&mibextid=LQQJ4d">
+                  <BsFacebook className="icon" size={24} />
+                </a>
+                <a className="social-icon instagram" href="https://www.instagram.com/oyl_indumentariacanchera/">
+                  <BsInstagram className="icon" size={24} />
+                </a>
+                <a className="social-icon tiktok" href="https://www.tiktok.com/@oylindumentariachera?_t=8cN4v4cw2qM&_r=1">
+                  <BsTiktok className="icon" size={24} />
+                </a>
+              </div>
+            </div>
+            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 ">
+              <h6 className="text-uppercase fw-bold mb-4 tit ">PREGUNTAS FRECUENTES</h6>
+              <p>
+              <GoTriangleRight className="location-icon" />
+                <a href="#" className="text-reset">
+                ¿QUIÉNES SOMOS?
+                </a>
+              </p>
+              <p>
+              <GoTriangleRight className="location-icon" />
+                <a href="#" className="text-reset">
+                ¿COMO REALIZAR UN PEDIDO?
+                </a>
+              </p>
+              <p>
+              <GoTriangleRight className="location-icon" />
+                <a href="#" className="text-reset">
+                  PAGO
+                </a>
+              </p>
+              <p>
+              <GoTriangleRight className="location-icon" />
+                <a href="#" className="text-reset">
+                  ENVÍO
+                </a>
+              </p>
+              <p>
+              <GoTriangleRight className="location-icon" />
+                <a href="#" className="text-reset">
+                  CAMBIOS
+                </a>
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section className="cont-2">
-        <MDBContainer className='text-center text-md-start mt-5'>
-          <MDBRow className='mt-3'>
-            <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>
-                <MDBIcon icon="gem" className="me-3" />
-                Company name
-              </h6>
-              <p>
-                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit.
-              </p>
-            </MDBCol>
+      <div className="p-4 back-down line-container">
+  <p className="bottom"> 
+    <span  style={{ color: "#F5037C", fontWeight: "bold" }}>DISEÑADO POR: </span>
+    <span>LAURA SALAS & MÓNICA BRAVO</span>
+  </p>
 
-            <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Angular
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  React
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Vue
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Laravel
-                </a>
-              </p>
-            </MDBCol>
-
-            <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Pricing
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Settings
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Orders
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Help
-                </a>
-              </p>
-            </MDBCol>
-
-            <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
-              <p>
-                <MDBIcon icon="home" className="me-2" />
-                New York, NY 10012, US
-              </p>
-              <p>
-                <MDBIcon icon="envelope" className="me-3" />
-                info@example.com
-              </p>
-              <p>
-                <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88
-              </p>
-              <p>
-                <MDBIcon icon="print" className="me-3" /> + 01 234 567 89
-              </p>
-            </MDBCol>
-          </MDBRow>
-        </MDBContainer>
-      </section>
-
-      <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-        © 2021 Copyright:
-        <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
-          MDBootstrap.com
-        </a>
-      </div>
-    </MDBFooter>
+    <p className="bottom">
+      <span  style={{ color: "#FF5601", fontWeight: "bold" }}>DESARROLLADO POR: </span>
+      <span>LUCILA WERNER & GIANCARLO OBLITAS</span>
+    </p>
+  
+</div>
+    </footer>
   );
 }
+
 export default Footer;

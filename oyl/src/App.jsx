@@ -10,7 +10,7 @@ function App() {
 
     <BrowserRouter>
         <CustomContainer/>
-        <Footer/>
+        <Footer className="footer-container" />
       </BrowserRouter>
 
   )
