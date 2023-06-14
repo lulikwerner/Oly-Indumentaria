@@ -3,7 +3,8 @@ import '../Footer/Footer.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import { TiLocationOutline } from 'react-icons/ti';
 import { BsFacebook, BsInstagram, BsTiktok } from 'react-icons/bs'
-import {GoTriangleRight} from 'react-icons/go'
+import {GoTriangleRight} from 'react-icons/go';
+import { Link } from "react-router-dom";
 
 
 
@@ -84,33 +85,33 @@ function Footer() {
               <h6 className="text-uppercase fw-bold mb-4 titR ">PREGUNTAS FRECUENTES</h6>
               <p className="faq-item">
               <GoTriangleRight className="location-icon" />
-                <a href="#" className="text-reset">
+                <Link to={`/PreguntasFrecuentes`} className="text-reset">
                 ¿QUIÉNES SOMOS?
-                </a>
+                </Link>
               </p>
               <p className="faq-item">
               <GoTriangleRight className="location-icon" />
-                <a href="#" className="text-reset">
+              <Link to={`/PreguntasFrecuentes`} className="text-reset">
                 ¿COMO REALIZAR UN PEDIDO?
-                </a>
+                </Link>
               </p>
               <p className="faq-item">
               <GoTriangleRight className="location-icon" />
-                <a href="#" className="text-reset">
+              <Link to={`/PreguntasFrecuentes`} className="text-reset">
                   PAGO
-                </a>
+                  </Link>
               </p>
               <p className="faq-item">
               <GoTriangleRight className="location-icon" />
-                <a href="#" className="text-reset">
+              <Link to={`/PreguntasFrecuentes`} className="text-reset">
                   ENVÍO
-                </a>
+                  </Link>
               </p>
               <p>
               <GoTriangleRight className="location-icon" />
-                <a href="#" className="text-reset">
+              <Link to={`/PreguntasFrecuentes`} className="text-reset">
                   CAMBIOS
-                </a>
+                  </Link>
               </p>
             </div>
           </div>

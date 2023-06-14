@@ -1,6 +1,6 @@
 .card {
   background: none;
-  border: none;
+  border: none !important;
   width: 101%;
   margin-bottom: 2%;
 }
