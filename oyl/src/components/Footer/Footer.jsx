@@ -11,9 +11,9 @@ function Footer() {
   return (
     <footer className="footer">
       <section className="top-container">
-        <div className="containe-f text-center text-md-start mt-5 ">
-          <div className="row mt-3 top-container tit">
-            <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 ">
+      <div className="containe-f text-center text-md-start mt-5 ">
+  <div className="row mt-3 top-container  tit">
+    <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4 ml-auto mr-4">
               <h6 className="text-uppercase fw-bold mb-4 titR">
                 <i className="fas fa-gem me-3 "></i>RETIRO COMPRA ONLINE</h6>
               <div className="location-container">
@@ -40,7 +40,7 @@ function Footer() {
 
 
             </div>
-            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <div className="col-md- col-lg-3 col-xl-3 mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4 metodos-pago">
                 <span>MÉTODOS DE PAGO</span></h6>
               <p>
@@ -64,7 +64,7 @@ function Footer() {
                 </a>
               </p>
             </div>
-            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+           <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4 tit">SEGUINOS</h6>
 
 
@@ -80,27 +80,27 @@ function Footer() {
                 </a>
               </div>
             </div>
-            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 ">
-              <h6 className="text-uppercase fw-bold mb-4 tit ">PREGUNTAS FRECUENTES</h6>
-              <p>
+            <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4 mr-auto">
+              <h6 className="text-uppercase fw-bold mb-4 titR ">PREGUNTAS FRECUENTES</h6>
+              <p className="faq-item">
               <GoTriangleRight className="location-icon" />
                 <a href="#" className="text-reset">
                 ¿QUIÉNES SOMOS?
                 </a>
               </p>
-              <p>
+              <p className="faq-item">
               <GoTriangleRight className="location-icon" />
                 <a href="#" className="text-reset">
                 ¿COMO REALIZAR UN PEDIDO?
                 </a>
               </p>
-              <p>
+              <p className="faq-item">
               <GoTriangleRight className="location-icon" />
                 <a href="#" className="text-reset">
                   PAGO
                 </a>
               </p>
-              <p>
+              <p className="faq-item">
               <GoTriangleRight className="location-icon" />
                 <a href="#" className="text-reset">
                   ENVÍO
@@ -117,7 +117,7 @@ function Footer() {
         </div>
       </section>
 
-      <div className="p-4 back-down line-container">
+      <div className="p-4  line-container">
   <p className="bottom"> 
     <span  style={{ color: "#F5037C", fontWeight: "bold" }}>DISEÑADO POR: </span>
     <span>LAURA SALAS & MÓNICA BRAVO</span>

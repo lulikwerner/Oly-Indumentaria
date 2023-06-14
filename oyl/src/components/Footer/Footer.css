@@ -1,7 +1,13 @@
-.back-down{
+.line-container{
     background-color: #F5CFA2;
     width:1280px;
+   
 }
+.line-container p {
+    margin-bottom: 8%;
+    flex-basis: 50%;
+    text-align: center;
+  }
 
 .top-container{
     background-color: #FAE6CE;
@@ -10,7 +16,7 @@
 .container-f{
 
     background-color: #FAE6CE !important;
-    margin-left: 0% !important;
+
     margin-bottom: 0%!important ;
 }
 .titR{
@@ -19,8 +25,7 @@
     font-family: 'Poppins', sans-serif;
 }
 .tit{
-    margin-top: 12%;
-
+    margin-top: 10%;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     white-space: nowrap;
@@ -34,7 +39,7 @@ p {
     margin-bottom: 5%!important ;
   }
   .location-container {
-    display: flex;
+
     align-items: center;
     margin-top: 0%;
   }
@@ -58,15 +63,12 @@ p {
     font-size:12px;
   }
   .metodos-pago {
-    margin-top: 12%;
-    display: flex;
+    margin-top: 10%;
     align-items: center;
     font-size: 16px;
   }
   
-  .metodos-pago span {
-    margin-left: 5px; /* Adjust the spacing between the icon and the text as needed */
-  }
+
   .social-icon a {
     margin-right: 10px; /* Adjust the value as per your desired spacing */
   }
@@ -74,9 +76,9 @@ p {
     color: BLACK; /* Change the color to your desired hover color */
   }
   .icon{
-
     color:#F5037C;
   }
+
   .line-container {
     display: flex;
     height: 53px;
@@ -86,14 +88,27 @@ p {
     position: absolute;
   }
   
-  .line-container p {
-    width:1280px;
-    margin-bottom: 8%;
-    flex-basis: 50%;
-    text-align: center;
-  }
+
   .bottom{
     font-Size: 14px;
  
   }
+  .row{
+    margin-left:0% !important;
+
+  }
+  .row div{
+    margin-left:2% !important;
+
+  }
+  .custom-margin {
+    
+    margin-left: 30%!important;
+  }
+
+  
+  
+  
+  
+  
   
