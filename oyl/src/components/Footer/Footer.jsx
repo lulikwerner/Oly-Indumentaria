@@ -14,64 +14,56 @@ function Footer() {
       <section className="top-container">
       <div className="containe-f text-center text-md-start mt-5 ">
   <div className="row mt-3 top-container  tit">
-    <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4 ml-auto mr-4">
-              <h6 className="text-uppercase fw-bold mb-4 titR">
-                <i className="fas fa-gem me-3 "></i>RETIRO COMPRA ONLINE</h6>
+    <div className=" col-sm-12 col-md-6 col-lg-3 col-xl-3 mx-auto mb-4 ml-auto mr-4 media">
+              <h6 className="text-uppercase fw-bold mb-4 titR custom">
+               RETIRO COMPRA ONLINE</h6>
               <div className="location-container">
                 <p className="moticon">
-                  <TiLocationOutline className="location-icon" />
-                  <span className="bold-text">Héctor Arregui 2523, José C. Paz</span><br></br>
-                  <span className="time-text">Lunes a Viernes 16:00 a 19:30</span>
+                  <TiLocationOutline className="location-icon icon-retiro" />
+                  <span className="bold-text ">Héctor Arregui 2523, José C. Paz</span><br></br>
+                  <span className="time-text text">Lunes a Viernes 16:00 a 19:30</span>
                 </p>
               </div>
               <div className="location-container">
                 <p className="moticon">
-                  <TiLocationOutline className="location-icon" />
-                  <span className="bold-text">Nazca 2779 1B, Villa del Parque </span><br></br>
-                  <span className="time-text">Lunes a Viernes 9:30 a 17:00</span>
+                  <TiLocationOutline className="location-icon icon-retiro" />
+                  <span className="bold-text ">Nazca 2779 1B, Villa del Parque </span><br></br>
+                  <span className="time-text text">Lunes a Viernes 9:30 a 17:00</span>
                 </p>
               </div>
               <div className="location-container">
                 <p className="moticon">
-                  <TiLocationOutline className="location-icon" />
-                  <span className="bold-text">Héctor Arregui 2523, José C. Paz </span><br></br>
-                  <span className="time-text">Lunes a Viernes 16:00 a 19:30</span>
+                  <TiLocationOutline className="location-icon icon-retiro" />
+                  <span className="bold-text ">Héctor Arregui 2523, José C. Paz </span><br></br>
+                  <span className="time-text text">Lunes a Viernes 16:00 a 19:30</span>
                 </p>
               </div>
 
 
             </div>
-            <div className="col-md- col-lg-3 col-xl-3 mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4 metodos-pago">
+            <div className=" col-sm-12 col-md-6 col-lg-3 col-xl-3 mx-auto mb-4 media">
+              <h6 className="text-uppercase fw-bold mb-4 metodos-pago custom-h6">
                 <span>MÉTODOS DE PAGO</span></h6>
-              <p>
-                <a className="text-reset">
+              <p className=" text">
                   EFECTIVO
-                </a>
               </p>
-              <p>
-                <a className="text-reset">
+              <p className=" text">
                   TRANSFERENCIAS
-                </a>
               </p>
-              <p>
-                <a className="text-reset">
+              <p className=" text">
                   Mercado Pago (con recargos)
-                </a>
               </p>
-              <p>
-                <a className="text-reset">
+              <p className=" text">
                   UALÁ (Cuotas sin interés)
-                </a>
               </p>
             </div>
-           <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4 tit">SEGUINOS</h6>
+           <div className=" col-sm-12 col-md-6 col-lg-2 col-xl-2 mx-auto mb-4 media">
+              <h6 className="text-uppercase fw-bold mb-4 tit custom-h6 ">SEGUINOS</h6>
 
 
-              <div className="social-icon">
+              <div className="social-icon text">
                 <a className="social-icon facebook" href="https://www.facebook.com/profile.php?id=100070583535301&mibextid=LQQJ4d">
-                  <BsFacebook className="icon" size={24} />
+                  <BsFacebook className="icon text" size={24} />
                 </a>
                 <a className="social-icon instagram" href="https://www.instagram.com/oyl_indumentariacanchera/">
                   <BsInstagram className="icon" size={24} />
@@ -81,37 +73,37 @@ function Footer() {
                 </a>
               </div>
             </div>
-            <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4 mr-auto">
-              <h6 className="text-uppercase fw-bold mb-4 titR ">PREGUNTAS FRECUENTES</h6>
+            <div className=" col-sm-12 col-md-6 col-lg-3 col-xl-3 mx-auto mb-4 mr-auto media">
+              <h6 className="text-uppercase fw-bold mb-4 titR  custom-preg">PREGUNTAS FRECUENTES</h6>
               <p className="faq-item">
-              <GoTriangleRight className="location-icon" />
+              <GoTriangleRight className="location-icon text" />
                 <Link to={`/PreguntasFrecuentes`} className="text-reset">
                 ¿QUIÉNES SOMOS?
                 </Link>
               </p>
               <p className="faq-item">
-              <GoTriangleRight className="location-icon" />
+              <GoTriangleRight className="location-icon text" />
               <Link to={`/PreguntasFrecuentes`} className="text-reset">
                 ¿COMO REALIZAR UN PEDIDO?
                 </Link>
               </p>
               <p className="faq-item">
-              <GoTriangleRight className="location-icon" />
+              <GoTriangleRight className="location-icon text" />
               <Link to={`/PreguntasFrecuentes`} className="text-reset">
                   PAGO
                   </Link>
               </p>
               <p className="faq-item">
-              <GoTriangleRight className="location-icon" />
+              <GoTriangleRight className="location-icon text" />
               <Link to={`/PreguntasFrecuentes`} className="text-reset">
                   ENVÍO
                   </Link>
               </p>
               <p>
-              <GoTriangleRight className="location-icon" />
+              <GoTriangleRight className="location-icon text" />
               <Link to={`/PreguntasFrecuentes`} className="text-reset">
                   CAMBIOS
-                  </Link>
+                </Link>
               </p>
             </div>
           </div>

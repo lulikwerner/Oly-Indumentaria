@@ -1,0 +1,34 @@
+.imf{
+
+    width:1280px;
+}
+.responsive-image{
+    width:1280px;
+}
+@media (max-width: 1024px) {
+    .imf{
+
+        width:1024px;
+    }
+    .responsive-image{
+        width:1024px;
+    } 
+}
+@media (max-width: 768px) {
+    .imf{
+
+        width:768px;
+    }
+    .responsive-image{
+        width:768px;
+    } 
+}
+@media (max-width: 640px) {
+    .imf{
+
+        width:640px;
+    }
+    .responsive-image{
+        width:640px;
+    } 
+}

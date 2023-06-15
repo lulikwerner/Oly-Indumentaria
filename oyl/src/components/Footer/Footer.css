@@ -14,9 +14,7 @@
     width:1280px;
 }
 .container-f{
-
     background-color: #FAE6CE !important;
-
     margin-bottom: 0%!important ;
 }
 .titR{
@@ -62,13 +60,15 @@ p {
   .text-reset{
     font-size:12px;
   }
+  .text-reset:hover {
+    text-decoration: underline;
+  }
   .metodos-pago {
     margin-top: 10%;
     align-items: center;
     font-size: 16px;
   }
   
-
   .social-icon a {
     margin-right: 10px; /* Adjust the value as per your desired spacing */
   }
@@ -83,7 +83,6 @@ p {
     display: flex;
     height: 53px;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
     position: absolute;
   }
@@ -104,6 +103,89 @@ p {
     
     margin-left: 30%!important;
   }
+  .text{
+    font-size: 12px;
+  }
+/*Media 1024*/
+  @media (max-width: 1024px) {
+  .line-container{
+    width:1024px;
+  }
+  .top-container{
+    width:1024px;
+}
+}
+/*Media 768*/
+@media (max-width: 768px) {
+  .line-container {
+    width: 100%;
+    max-width: 768px;
+
+  }
+.titR {
+  margin-top: 15%;
+}
+  .top-container {
+    width: 100%;
+    max-width: 768px;
+  }
+.custom-preg{
+  margin-left: 80%;
+  margin-top: 10%;
+}
+
+.custom{
+  margin-top: 15%;
+  margin-left: 80%;
+}
+  .custom-h6{
+  margin-left: 80%;
+  margin-top: 5%;
+}
+
+.text{
+  margin-left: 80%;
+  justify-content: center;
+}
+
+.icon-retiro{
+  margin-left: 73%;
+}
+.line-container p {
+  font-size: 12px;
+}
+}
+/*Media 640*/
+@media (max-width: 640px){
+.line-container{
+  width: 100%;
+  max-width: 640px;
+}
+.top-container{
+  width:640px;
+}
+.custom-preg{
+  margin-left: 0%;
+}
+.custom{
+  margin-left: 0%;
+}
+  .custom-h6{
+  margin-left: 0%;
+}
+.text{
+  margin-left: 0%;
+
+}
+.icon-retiro{
+  margin-left: 0%;
+}
+.line-container p {
+  margin-top: -3%;
+  flex-basis: 45%;
+}
+}
+
 
   
   
