@@ -55,6 +55,20 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+#hijo_uno{
+  display:inline-block;
+  height: 10%;
+  width: 6%;
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
