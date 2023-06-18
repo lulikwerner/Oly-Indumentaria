@@ -1,4 +1,5 @@
 import './App.css'
+import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer'
 import CustomContainer from './components/Container/Container'
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
@@ -9,8 +10,9 @@ function App() {
 
 
   return (
-
+    <>
     <BrowserRouter>
+    <Navbar />
     <Routes>
     <Route
             path="/"
@@ -23,6 +25,7 @@ function App() {
         </Routes>
         <Footer className="footer-container" />
       </BrowserRouter>
+      </>
 
   )
 }
