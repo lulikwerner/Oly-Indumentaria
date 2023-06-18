@@ -1,12 +1,13 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import Option from '../Option/Option';
+import '../OptionList/OptionList.css';
 
 
 
 const OptionList = ({ options }) => {
   return (
-    <div className="">
+    <div className="Opt-list">
       {options.map((opt) => (
         <Card key={opt.id} className="">
           <Option opt={opt} />

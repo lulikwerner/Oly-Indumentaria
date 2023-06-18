@@ -7,7 +7,7 @@ const Item = ({ opt }) => {
 
   return (
     <div>
-      <Card className="cardhover">
+      <Card className="cardhoverP">
         <section>
           <div className="containerP">
             <div className="imgColumn">
