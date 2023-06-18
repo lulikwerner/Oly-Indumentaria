@@ -11,10 +11,8 @@ const Item = ({ prod }) => {
     // Exclude the product with ID 8 from opening the WhatsApp link
     if (id !== 8) {
       const message = encodeURIComponent('hola lu te consulto por este producto');
-
       // Generate the WhatsApp URL with the pre-filled message and contact email
       const whatsappUrl = `https://wa.me/+541136806292?text=${message}`;
-
       // Open the WhatsApp URL in a new window or tab
       window.open(whatsappUrl, '_blank');
     }

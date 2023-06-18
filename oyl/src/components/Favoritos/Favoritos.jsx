@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Recurso17 from '../../../public/assets/img/Recurso 17.png';
 import Recurso16 from '../../../public/assets/img/Recurso 16.png';
 import Recurso15 from '../../../public/assets/img/Recurso 15.png';
