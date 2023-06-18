@@ -21,4 +21,20 @@ let products = [
     }
   });
 
-  
+  let product2 =[
+    { id: 1, img: "q"},
+    { id: 2, img: "w" },
+    { id: 3, img: "u"},
+    { id: 4, img: "z" },
+  ]
+  export const gFetch2 = () => new Promise((res, rej) => {
+    let condition = true
+    if (condition) {
+        setTimeout(() => {
+            res(product2);
+          });
+        
+    }else {
+        rej('error en el fetch')
+    }
+  });

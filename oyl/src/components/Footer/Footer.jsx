@@ -77,7 +77,7 @@ function Footer() {
               <h6 className="text-uppercase fw-bold mb-4 titR  custom-preg">PREGUNTAS FRECUENTES</h6>
               <p className="faq-item">
               <GoTriangleRight className="location-icon text" />
-                <Link to={`/PreguntasFrecuentes`} className="text-reset">
+                <Link to={`/PreguntasFrecuentes#quienes-somos`}  className="text-reset">
                 ¿QUIÉNES SOMOS?
                 </Link>
               </p>
