@@ -32,6 +32,10 @@
     width: 743px;
 }
 
+.imgCard{
+    width:108px;
+    height:100%;
+}
 @media (max-width: 1024px) {
     .imf {
         width: 1024px;
