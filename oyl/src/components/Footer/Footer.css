@@ -1,6 +1,6 @@
 .line-container{
     background-color: #F5CFA2;
-    width:1280px;
+    width:100%;
    
 }
 .line-container p {
@@ -11,7 +11,7 @@
 
 .top-container{
     background-color: #FAE6CE;
-    width:1280px;
+    width:100%;
 }
 .container-f{
     background-color: #FAE6CE !important;

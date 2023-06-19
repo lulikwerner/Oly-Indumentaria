@@ -1,56 +1,58 @@
+/* Navbar.css */
 header {
-    background-color: #FAE6CE;
+  background-color: #FAE6CE;
 }
-
 
 .container-Nav {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10%;
-    padding-right: 10%;
-    align-items: center;
-    gap: 10px;
-  
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  align-items: center;
+  gap: 10px;
 }
 
-
 .imagen-Logo {
-    width: 100%;
-    height: 111px;
+  width: 100%;
+  height: 111px;
 }
 
 .centered-logo {
-    justify-content: center;
-    align-items: center;
-
+  justify-content: center;
+  align-items: center;
 }
 
 .Option-Nav {
-    margin-right: 50%;
-    text-align: left;
-    color: #101010;
-    text-decoration: none;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 33px;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .Option-Nav::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #101010;
-    transition: width 0.3s ease;
-  }
-  
-  .Option-Nav:hover::after {
-    width: 100%;
-  }
-  
+  margin-right: 50%;
+  text-align: left;
+  color: #101010;
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 33px;
+  position: relative;
+  overflow: hidden;
+}
+
+.Option-Nav::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #101010;
+  transition: width 0.3s ease;
+}
+
+.Option-Nav.active::after {
+  width: 100%;
+  transition: none;
+}
+
+.Option-Nav:hover::after,
+.Option-Nav.active:hover::after {
+  width: 100%;
+}
