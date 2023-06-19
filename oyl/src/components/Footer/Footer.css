@@ -59,6 +59,7 @@ p {
   
   .text-reset{
     font-size:12px;
+    text-decoration: none;
   }
   .text-reset:hover {
     text-decoration: underline;

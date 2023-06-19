@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 import '../Footer/Footer.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import { TiLocationOutline } from 'react-icons/ti';
@@ -9,6 +10,23 @@ import { Link } from "react-router-dom";
 
 
 function Footer() {
+  useEffect(() => {
+    const scrollToSection = (sectionId) => {
+      const section = document.getElementById(sectionId);
+      console.log(section);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
+    // Call scrollToSection after a delay to ensure the sections are rendered
+    setTimeout(() => {
+      scrollToSection('section1');
+      scrollToSection('section2');
+      scrollToSection('section3');
+      scrollToSection('section4');
+    }, 1000); // Adjust the delay as needed
+  }, []); 
   return (
     <footer className="footer">
       <section className="top-container">
@@ -77,32 +95,52 @@ function Footer() {
               <h6 className="text-uppercase fw-bold mb-4 titR  custom-preg">PREGUNTAS FRECUENTES</h6>
               <p className="faq-item">
               <GoTriangleRight className="location-icon text" />
-                <Link to={`/PreguntasFrecuentes#quienes-somos`}  className="text-reset">
-                ¿QUIÉNES SOMOS?
+              <Link
+            to="/PreguntasFrecuentes#section1"
+            className="text-reset"
+            onClick={() => scrollToSection('section1')}
+          >
+            ¿QUIÉNES SOMOS?
+          </Link>
+              </p>
+              <p className="faq-item">
+              <GoTriangleRight className="location-icon text" />
+              <Link
+            to="/PreguntasFrecuentes#section2"
+            className="text-reset"
+            onClick={() => scrollToSection('section2')}
+          >
+             ¿COMO REALIZAR UN PEDIDO?
                 </Link>
               </p>
               <p className="faq-item">
               <GoTriangleRight className="location-icon text" />
-              <Link to={`/PreguntasFrecuentes`} className="text-reset">
-                ¿COMO REALIZAR UN PEDIDO?
-                </Link>
-              </p>
-              <p className="faq-item">
-              <GoTriangleRight className="location-icon text" />
-              <Link to={`/PreguntasFrecuentes`} className="text-reset">
-                  PAGO
+              <Link
+            to="/PreguntasFrecuentes#section2"
+            className="text-reset"
+            onClick={() => scrollToSection('section2')}
+          >
+               PAGO
                   </Link>
               </p>
               <p className="faq-item">
               <GoTriangleRight className="location-icon text" />
-              <Link to={`/PreguntasFrecuentes`} className="text-reset">
-                  ENVÍO
+              <Link
+            to="/PreguntasFrecuentes#section3"
+            className="text-reset"
+            onClick={() => scrollToSection('section3')}
+          >
+               ENVÍO
                   </Link>
               </p>
               <p>
               <GoTriangleRight className="location-icon text" />
-              <Link to={`/PreguntasFrecuentes`} className="text-reset">
-                  CAMBIOS
+              <Link
+            to="/PreguntasFrecuentes#section4"
+            className="text-reset"
+            onClick={() => scrollToSection('section4')}
+          >
+               CAMBIOS
                 </Link>
               </p>
             </div>
