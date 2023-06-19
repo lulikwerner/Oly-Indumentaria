@@ -6,9 +6,10 @@ import retratoPersona from '../../../public/assets/img/retrato-persona.png';
 import '../Container/Container.css'
 
 
+
 function CustomContainer() {
   return (
-
+   
     <div >
         <img src={retratoPersona} alt="home" className="responsive-image"/>
           <div className="itemCont">

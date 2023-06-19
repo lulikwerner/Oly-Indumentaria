@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import Option from '../Option/Option';
-import '../OptionList/OptionList.css';
+
 
 
 
