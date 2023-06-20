@@ -13,7 +13,7 @@ function Footer() {
   const lauraSalasRepoUrl = 'https://www.behance.net/laurasalas9';
   const monicaBravoRepoUrl = '';
   const lucilaWernerRepoUrl = 'https://lkwportafolio.netlify.app/';
-  const giancarloOblitasoRepoUrl='';
+  const giancarloOblitasoRepoUrl='https://www.linkedin.com/in/giancarlo-oblitas-60b77623b';
 
   useEffect(() => {
     const scrollToSection = (sectionId) => {
