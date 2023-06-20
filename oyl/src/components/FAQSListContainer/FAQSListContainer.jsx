@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import OptionList from '../OptionList/OptionList';
 import { gFetch2 } from '../../utils/gFetch';
-//import '../ItemListContainer/ItemListContainer.css';
+
+
 
 const FAQSListContainer = () => {
   const [options, setOptions] = useState([]);
@@ -17,7 +18,7 @@ const FAQSListContainer = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="containerPF">
       <OptionList className="" options={options} />
     </div>
   );

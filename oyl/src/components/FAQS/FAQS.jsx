@@ -5,7 +5,7 @@ import '../FAQS/FAQS.css';
 const FAQS = () => {
   return (
 <>
- <div className="imf">
+ <div className="imf" id="section5">
  <img src={Pfrecuentes} alt="Your Image" className="responsive-image" />
  <FAQSListContainer/>
 </div>

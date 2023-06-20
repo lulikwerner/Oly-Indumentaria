@@ -10,6 +10,11 @@ import { Link } from "react-router-dom";
 
 
 function Footer() {
+  const lauraSalasRepoUrl = 'https://www.behance.net/laurasalas9';
+  const monicaBravoRepoUrl = '';
+  const lucilaWernerRepoUrl = 'https://lkwportafolio.netlify.app/';
+  const giancarloOblitasoRepoUrl='';
+
   useEffect(() => {
     const scrollToSection = (sectionId) => {
       const section = document.getElementById(sectionId);
@@ -76,7 +81,7 @@ function Footer() {
               </p>
             </div>
            <div className=" col-sm-12 col-md-6 col-lg-2 col-xl-2 mx-auto mb-4 media">
-              <h6 className="text-uppercase fw-bold mb-4 tit custom-h6 ">SEGUINOS</h6>
+              <h6 className="text-uppercase fw-bold mb-4 tit ">SEGUINOS</h6>
 
 
               <div className="social-icon text">
@@ -151,12 +156,14 @@ function Footer() {
       <div className="p-4  line-container">
   <p className="bottom"> 
     <span  style={{ color: "#F5037C", fontWeight: "bold" }}>DISEÑADO POR: </span>
-    <span>LAURA SALAS & MÓNICA BRAVO</span>
+    <a href={lauraSalasRepoUrl} target="_blank" rel="noopener noreferrer" style={{ color: "#000000"}} className="repo">LAURA SALAS</a> &amp;
+    <a href={monicaBravoRepoUrl} target="_blank" rel="noopener noreferrer" style={{ color: "#000000"}} className="repo"> MÓNICA BRAVO</a>
   </p>
 
     <p className="bottom">
       <span  style={{ color: "#FF5601", fontWeight: "bold" }}>DESARROLLADO POR: </span>
-      <span>LUCILA WERNER & GIANCARLO OBLITAS</span>
+      <a href={lucilaWernerRepoUrl} target="_blank" rel="noopener noreferrer" style={{ color: "#000000"}} className="repo">LUCILA WERNER</a> &amp;
+    <a href={giancarloOblitasoRepoUrl} target="_blank" rel="noopener noreferrer" style={{ color: "#000000"}} className="repo"> GIANCARLO OBLITAS</a>
     </p>
   
 </div>

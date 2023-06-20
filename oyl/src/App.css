@@ -1,4 +1,4 @@
-#root {
+ #root {
   max-width: 100%;
   min-height: 100vh;
   margin: 0 auto;
@@ -11,4 +11,3 @@
   grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
   grid-gap: 0rem; /* Adjust the gap between columns */
 }
-

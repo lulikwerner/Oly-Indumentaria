@@ -32,7 +32,7 @@ const Item = ({ prod }) => {
       </Card>
       {id === 8 && (
        
-       <ModalP showModal={showModal} handleCloseModal={handleCloseModal} />
+       <ModalP showModal={showModal} handleCloseModal={handleCloseModal} className="custom-moda"/>
       )}
     </div>
   );
