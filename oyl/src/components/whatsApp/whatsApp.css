@@ -18,3 +18,10 @@
     width: 100%;
     height: 100%;
   }
+
+  @media only screen and (max-width: 320px){
+    #hijo_uno{
+      width: 45px;
+      height: 45px;
+    }
+  }

@@ -3,8 +3,6 @@ import { Card } from 'react-bootstrap';
 import Option from '../Option/Option';
 import '../OptionList/OptionList.css';
 
-
-
 const OptionList = ({ options }) => {
   return (
   <div className="Opt-list">

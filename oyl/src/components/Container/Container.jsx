@@ -5,25 +5,19 @@ import FavoritosContainer from '../FavoritosContainer/FavoritosContainer';
 import retratoPersona from '../../../public/assets/img/retrato-persona.png';
 import '../Container/Container.css'
 
-
-
 function CustomContainer() {
   return (
    
     <div >
-        <img src={retratoPersona} alt="home" className="responsive-image"/>
+        <img id="retrato"src={retratoPersona} alt="home" className="responsive-image"/>
           <div className="itemCont">
                 <ItemListContainer />
           </div>
           <div className="favoritosCont">
             <FavoritosContainer />
           </div>
-
-    
-
     </div>
   );
 }
-
 
 export default CustomContainer;

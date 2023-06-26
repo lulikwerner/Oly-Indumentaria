@@ -2,10 +2,16 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
    grid-column-gap: 2%;
-   
-
   }
   .product{
     width:100%;
-  
+  }
+
+  @media only screen and (max-width: 320px){
+    .product-con {
+      grid-template-columns: repeat(1, 1fr);
+      grid-column-gap: 2%;
+      width: 230px;
+      height: 1700px;
+    }
   }
