@@ -7,8 +7,6 @@ import { BsFacebook, BsInstagram, BsTiktok } from 'react-icons/bs'
 import {GoTriangleRight} from 'react-icons/go';
 import { Link } from "react-router-dom";
 
-
-
 function Footer() {
   const lauraSalasRepoUrl = 'https://www.behance.net/laurasalas9';
   const monicaBravoRepoUrl = 'https://www.behance.net/monicabravouxdesign';
