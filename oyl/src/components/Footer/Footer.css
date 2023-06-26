@@ -180,14 +180,16 @@ p {
   font-size: 12px;
 }
 }
-/*Media 640*/
-@media (max-width: 640px){
+/*Media 320*/
+@media (max-width: 320px){
 .line-container{
   width: 100%;
-  max-width: 640px;
+  max-width: 320px;
+  height: 110px;
 }
 .top-container{
-  width:640px;
+  width:320px;
+  height: 900px;
 }
 .custom-preg{
   margin-left: 0%;
@@ -210,11 +212,3 @@ p {
   flex-basis: 45%;
 }
 }
-
-
-  
-  
-  
-  
-  
-  

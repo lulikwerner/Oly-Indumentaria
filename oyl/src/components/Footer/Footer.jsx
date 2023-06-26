@@ -35,13 +35,13 @@ function Footer() {
   return (
     <footer className="footer">
       <section className="top-container">
-      <div className="containe-f text-center text-md-start mt-5 ">
-  <div className="row mt-3 top-container  tit">
-    <div className=" col-sm-12 col-md-6 col-lg-3 col-xl-3 mx-auto mb-4 ml-auto mr-4 media">
+        <div className="containe-f text-center text-md-start mt-5 ">
+          <div className="row mt-3 top-container  tit">
+            <div className=" col-sm-12 col-md-6 col-lg-3 col-xl-3 mx-auto mb-4 ml-auto mr-4 media">
               <h6 className="text-uppercase fw-bold mb-4 titR custom">
                RETIRO COMPRA ONLINE</h6>
-              <div className="location-container">
-                <p className="moticon">
+                <div className="location-container">
+                  <p className="moticon">
                   <TiLocationOutline className="location-icon icon-retiro" />
                   <span className="bold-text ">Héctor Arregui 2523, José C. Paz</span><br></br>
                   <span className="time-text text">Lunes a Viernes 16:00 a 19:30</span>

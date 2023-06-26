@@ -3,12 +3,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width:100%;
-
   }
   
   .custom-img-class {
-    /* Add your custom styles here */
-    /* For example: */
     width: 100%;
     margin: 10px;
   }

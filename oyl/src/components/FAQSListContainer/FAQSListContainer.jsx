@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import OptionList from '../OptionList/OptionList';
 import { gFetch2 } from '../../utils/gFetch';
 
-
-
 const FAQSListContainer = () => {
   const [options, setOptions] = useState([]);
 
