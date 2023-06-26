@@ -47,18 +47,18 @@ function Footer() {
                   <span className="time-text text">Lunes a Viernes 16:00 a 19:30</span>
                 </p>
               </div>
-              <div className="location-container">
-                <p className="moticon">
-                  <TiLocationOutline className="location-icon icon-retiro" />
-                  <span className="bold-text ">Nazca 2779 1B, Villa del Parque </span><br></br>
-                  <span className="time-text text">Lunes a Viernes 9:30 a 17:00</span>
+              <div className="location-container moticon-nazc">
+                <p className="moticon ">
+                  <TiLocationOutline className="location-icon icon-retiro nazc" />
+                  <span className="bold-text nazc ">Nazca 2779 1B, Villa del Parque </span><br></br>
+                  <span className="time-text text text-nazc">Lunes a Viernes 9:30 a 17:00</span>
                 </p>
               </div>
               <div className="location-container">
                 <p className="moticon">
                   <TiLocationOutline className="location-icon icon-retiro" />
-                  <span className="bold-text ">Héctor Arregui 2523, José C. Paz </span><br></br>
-                  <span className="time-text text">Lunes a Viernes 16:00 a 19:30</span>
+                  <span className="bold-text ">Puntos de encuentro a convenir </span><br></br>
+                  <span className="time-text text text-cor">A coordinar</span>
                 </p>
               </div>
 
@@ -67,16 +67,16 @@ function Footer() {
             <div className=" col-sm-12 col-md-6 col-lg-3 col-xl-3 mx-auto mb-4 media">
               <h6 className="text-uppercase fw-bold mb-4 metodos-pago custom-h6">
                 <span>MÉTODOS DE PAGO</span></h6>
-              <p className=" text">
+              <p className=" text MPE">
                   EFECTIVO
               </p>
-              <p className=" text">
+              <p className=" text MPT">
                   TRANSFERENCIAS
               </p>
-              <p className=" text">
+              <p className=" text MPMP">
                   Mercado Pago (con recargos)
               </p>
-              <p className=" text">
+              <p className=" text MPU">
                   UALÁ (Cuotas sin interés)
               </p>
             </div>
@@ -98,7 +98,7 @@ function Footer() {
             </div>
             <div className=" col-sm-12 col-md-6 col-lg-3 col-xl-3 mx-auto mb-4 mr-auto media">
               <h6 className="text-uppercase fw-bold mb-4 titR  custom-preg">PREGUNTAS FRECUENTES</h6>
-              <p className="faq-item">
+              <p className="faq-item-q">
               <GoTriangleRight className="location-icon text" />
               <Link
             to="/PreguntasFrecuentes#section1"
@@ -108,7 +108,7 @@ function Footer() {
             ¿QUIÉNES SOMOS?
           </Link>
               </p>
-              <p className="faq-item">
+              <p className="faq-item-p">
               <GoTriangleRight className="location-icon text" />
               <Link
             to="/PreguntasFrecuentes#section2"
@@ -118,7 +118,7 @@ function Footer() {
              ¿COMO REALIZAR UN PEDIDO?
                 </Link>
               </p>
-              <p className="faq-item">
+              <p className="faq-item-pa">
               <GoTriangleRight className="location-icon text" />
               <Link
             to="/PreguntasFrecuentes#section2"
@@ -128,7 +128,7 @@ function Footer() {
                PAGO
                   </Link>
               </p>
-              <p className="faq-item">
+              <p className="faq-item-e">
               <GoTriangleRight className="location-icon text" />
               <Link
             to="/PreguntasFrecuentes#section3"
@@ -138,7 +138,7 @@ function Footer() {
                ENVÍO
                   </Link>
               </p>
-              <p>
+              <p className="faq-item-c">
               <GoTriangleRight className="location-icon text" />
               <Link
             to="/PreguntasFrecuentes#section4"
@@ -156,14 +156,14 @@ function Footer() {
       <div className="p-4  line-container">
   <p className="bottom"> 
     <span  style={{ color: "#F5037C", fontWeight: "bold" }}>DISEÑADO POR: </span>
-    <a href={lauraSalasRepoUrl} target="_blank" rel="noopener noreferrer" style={{ color: "#000000"}} className="repo">LAURA SALAS</a> &amp;
-    <a href={monicaBravoRepoUrl} target="_blank" rel="noopener noreferrer" style={{ color: "#000000"}} className="repo"> MÓNICA BRAVO</a>
+    <a href={lauraSalasRepoUrl} target="_blank" rel="noopener noreferrer" style={{ color: "#000000"}} className="repo repo-lau">LAURA SALAS</a> &amp;
+    <a href={monicaBravoRepoUrl} target="_blank" rel="noopener noreferrer" style={{ color: "#000000"}} className="repo repo-moni"> MÓNICA BRAVO</a>
   </p>
 
     <p className="bottom">
       <span  style={{ color: "#FF5601", fontWeight: "bold" }}>DESARROLLADO POR: </span>
-      <a href={lucilaWernerRepoUrl} target="_blank" rel="noopener noreferrer" style={{ color: "#000000"}} className="repo">LUCILA WERNER</a> &amp;
-    <a href={giancarloOblitasoRepoUrl} target="_blank" rel="noopener noreferrer" style={{ color: "#000000"}} className="repo"> GIANCARLO OBLITAS</a>
+      <a href={lucilaWernerRepoUrl} target="_blank" rel="noopener noreferrer" style={{ color: "#000000"}} className="repo repo-lu">LUCILA WERNER</a> &amp;
+    <a href={giancarloOblitasoRepoUrl} target="_blank" rel="noopener noreferrer" style={{ color: "#000000"}} className="repo repo-gian"> GIANCARLO OBLITAS</a>
     </p>
   
 </div>

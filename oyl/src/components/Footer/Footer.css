@@ -191,24 +191,87 @@ p {
   width:320px;
   height: 900px;
 }
-.custom-preg{
+.custom-preg{ 
   margin-left: 0%;
 }
 .custom{
-  margin-left: 0%;
+  margin-left: -3%;
 }
   .custom-h6{
-  margin-left: 0%;
+  margin-left: -5%;
 }
 .text{
-  margin-left: 0%;
+  margin-left:-5%;
 
 }
 .icon-retiro{
+  margin-left: 4%;
+}
+
+.bold-text{
+  margin-right:10%;
+}
+.nazc{
   margin-left: 0%;
 }
-.line-container p {
-  margin-top: -3%;
-  flex-basis: 45%;
+.moticon-nazc{
+  margin-left: -100%;
+}
+
+.text-cor{
+  margin-left: -43%;
+}
+.text-nazc{
+  margin-left: -8%;
+}
+.metodos-pago{
+  margin-left: -15%;
+}
+.MPMP{
+
+margin-left: -5% !important;
+  
+}
+.MPE{
+  margin-left: -47% !important;
+}
+.MPT{
+  margin-left: -33% !important;
+}
+.MPU{
+  margin-left: -15% !important;
+}
+.facebook{
+  margin-left: -30%;
+}
+.faq-item-q{
+ margin-left: -20% !important;
+}
+.faq-item-p{
+  margin-left: 0% !important;
+}
+.faq-item-pa{
+  margin-left: -44% !important;
+}
+.faq-item-e{
+  margin-left: -43% !important;
+}
+.faq-item-c{
+  margin-left: -38% !important;
+}
+.tit{
+  margin-left: -40%;
+}
+.repo-lau{
+  margin-left: 4%;
+}
+.repo-moni{
+  margin-left: 6%; 
+}
+
+.repo-gian{
+  margin-left: 13%; 
 }
 }
+
+
