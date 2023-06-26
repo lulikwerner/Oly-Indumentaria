@@ -184,14 +184,14 @@ p {
 @media (max-width: 320px){
 .footer{
   width: 320px;
+
 }
 .line-container{
-  width: 320px;
-  max-width: 320px;
+
   height: 110px;
 }
 .top-container{
-  width:320px;
+
   height: 900px;
 }
 .custom-preg{ 
@@ -274,6 +274,11 @@ margin-left: -5% !important;
 
 .repo-gian{
   margin-left: 13%; 
+}
+.media{
+  width: 310px !important;
+  margin-left: -2000%;
+
 }
 }
 
