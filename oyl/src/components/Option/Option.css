@@ -69,41 +69,60 @@
 }
 
 @media only screen and (max-width: 320px){
-    .containerP{
-    padding: 0px 0px;
-    gap: 0px;
-    height: 500px;
-    width: 300px;
-    }
 
+    .containerP {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+
+        width: 300px;
+        gap: 0px;
+      
+      }
+      
+      .imgColumn {
+        width: 30%;
+        margin-top:-10%
+      }
+      
     .cardhoverP {
         width: 10%;
-        margin-top: 1%;
-        margin-left: 1%;
+        margin-top: 5%;
+        margin-left: 4%;
     }
 
     .imgCard{
-        width:100%;
-        height:100%;
+        width:90%;
+        height:90%; 
     }
 
     .contentColumn h1 {
-    font-weight: 600;
-    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    font-weight: 400;
+    font-size: 16px;
     line-height: 10px;
+    padding-left: 10%;
     
 }
 
 .contentColumn p {
     font-size: 10px;
     line-height: 10px;
-    
-
+    padding-left: 5%;
+    padding-right: 3%;
 }
 
 .centered-text {
     width: 250px;
     height: 90px;
 }
+
+
+.centered-text {
+    font-size: 12px;
+    padding-left: 10%;
+}
+
 
 }
