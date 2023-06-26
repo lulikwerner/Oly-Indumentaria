@@ -20,6 +20,13 @@
   }
 
   @media only screen and (max-width: 320px){
+    .whatsapp-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
+    }
+  
     #hijo_uno{
       width: 45px;
       height: 45px;
