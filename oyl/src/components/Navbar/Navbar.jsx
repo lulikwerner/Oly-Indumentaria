@@ -2,8 +2,24 @@ import React from 'react';
 import '../Navbar/Navbar.css';
 import logo from '../../../public/assets/img/logo.png';
 import { NavLink, Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const Navbar = () => {
+
+  useEffect(() => {
+    const scrollToSection = (sectionId) => {
+      const section = document.getElementById(sectionId);
+      console.log(section);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
+  setTimeout(() => {
+    scrollToSection('section1');
+  }, 1000);
+}, []); 
+
   return (
     <header>
       <nav className="container-Nav">
@@ -19,7 +35,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div>
-          <NavLink to="/PreguntasFrecuentes" className="Option-Nav" activeclassname="active">Preguntas Frecuentes</NavLink>
+          <NavLink to="/PreguntasFrecuentes#section1" onClick={() => scrollToSection('section1')} className="Option-Nav" activeclassname="active">Preguntas Frecuentes</NavLink>
         </div>
       </nav>
     </header>
