@@ -1,5 +1,8 @@
 /* Navbar.css */
 header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
   margin-top: 0%;
   margin-bottom: -1.5%;
   background-color: #FAE6CE;
@@ -112,7 +115,7 @@ margin-left: -1500%;
 }
 .logo img {
 
-  padding-top: 0%;
+  padding-top: 1%;
   display: absolute;
   margin-bottom: 2%;
   width: 15%;
@@ -137,8 +140,13 @@ margin-left: -1500%;
 
 
 @media only screen and (max-width: 320px) {
+  /* Navbar.css */
+header {
+  position: fixed;
+  height: 5%;
+}
   nav {
-    height: 80vh;
+    height: 5vh;
   }
 
   .menu {
@@ -231,5 +239,8 @@ margin-left: -1500%;
     margin-bottom: 90%;
     margin-left: 10%;
   }
+ #retrato{
+  margin-top: 10%;
+ }
 }
 

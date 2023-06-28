@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<CustomContainer />} />
           <Route path="*" element={<Navigate to="/" />} />
-          <Route path="/PreguntasFrecuentes" element={<FAQS />} />
+          <Route path="/PreguntasFrecuentes" element={<FAQS/>} />
         </Routes>
         <Footer className="footer-container" />
       </BrowserRouter>

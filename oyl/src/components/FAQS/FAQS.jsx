@@ -7,7 +7,7 @@ const FAQS = () => {
   return (
 <>
  <div className="imf" id="section5">
- <img src={Pfrecuentes} alt="Your Image" className="responsive-image" />
+ <img id="retrato" src={Pfrecuentes} alt="Your Image" className="responsive-image" />
  <FAQSListContainer/>
 </div>
     </>

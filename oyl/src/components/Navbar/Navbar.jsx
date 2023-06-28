@@ -22,7 +22,12 @@ const Navbar = () => {
           <a href="https://wa.me/+541136806292?text=hola%20lu%20te%20consulto%20por%20este%20producto" className="Option-Nav">Productos</a>
         </div>
             <li className="pregFrec">
-            <NavLink to="/PreguntasFrecuentes" className="Option-Nav" activeclassname="active">Preguntas Frecuentes</NavLink>
+            <NavLink
+            to="/PreguntasFrecuentes#section1"
+         
+            onClick={() => scrollToSection('section1')} className="Option-Nav" activeclassname="active"
+          >Preguntas Frecuentes </NavLink>
+            
            </li>
           
             <label htmlFor="check" className="close-menu">
