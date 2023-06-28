@@ -9,6 +9,9 @@
     margin-top: 5%;
     margin-left: 15%;
 }
+.contentColumn p{
+    line-height: 18px !important;
+}
 .containerP {
     background-color: #FFE5F2;
     display: flex;
@@ -20,6 +23,7 @@
 }
 
 .contentColumn h1 {
+    justify-content: center;
     font-weight: 600;
     font-size: 20px;
     line-height: 60px;
@@ -68,7 +72,7 @@
     }
 }
 
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 360px){
 
     .containerP {
         display: flex;

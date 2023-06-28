@@ -12,10 +12,10 @@
   grid-gap: 0rem; /* Adjust the gap between columns */
 }
 
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 360px){
 
   header{
-    width: 320px;
+    width: 360px;
     height: 100%;
  
   }
@@ -33,6 +33,6 @@
 
   #retrato{
     height: 275px;
-    width: 320px;
+    width: 360px;
   }
 }

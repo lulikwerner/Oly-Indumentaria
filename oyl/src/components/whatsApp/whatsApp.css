@@ -19,7 +19,7 @@
     height: 100%;
   }
 
-  @media only screen and (max-width: 320px){
+  @media only screen and (max-width: 360px){
     .whatsapp-container {
       position: fixed;
       bottom: 20px;

@@ -35,8 +35,8 @@ let options = [
     </strong>,en cada momento de atención al cliente, me esfuerzo por <strong>brindar lo mejor de mí.</strong><br><strong>
     ¿Cómo lo hago? </strong>Siempre pienso en cómo me gustaría sentirme al realizar una compra: valorada,escuchada y asesorada de 
     manera experta.<br/>`,
-    foot:`Me encantaría ser parte de tu experiencia de compra y ayudarte a encontrar ese look perfecto que te haga sentir especial.
-    </br><strong>¡Te doy la bienvenida a OYL!</strong>`,
+    foot:`<strong>Me encantaría ser parte de tu experiencia de compra y ayudarte a encontrar ese look perfecto que te haga sentir especial.
+    </br>¡Te doy la bienvenida a OYL!</strong>`,
   },
   {
     id: "section2",
