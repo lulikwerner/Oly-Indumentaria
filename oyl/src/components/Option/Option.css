@@ -75,26 +75,25 @@
 @media only screen and (max-width: 360px){
 
     .containerP {
+       
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
-
+        margin-left: -3%;
         width: 300px;
         gap: 0px;
       
       }
-      
       .imgColumn {
+       
         width: 30%;
         margin-top:-10%
       }
-      
     .cardhoverP {
         width: 10%;
         margin-top: 5%;
         margin-left: 4%;
     }
-
     .imgCard{
         width:90%;
         height:90%; 
@@ -111,6 +110,7 @@
 }
 
 .contentColumn p {
+  
     font-size: 10px;
     line-height: 10px;
     padding-left: 5%;
