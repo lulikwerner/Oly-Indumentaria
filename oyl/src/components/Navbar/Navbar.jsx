@@ -2,8 +2,17 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../../../public/assets/img/logo.png';
 import '../Navbar/Navbar.css';
+import { useEffect } from 'react';
 
 const Navbar = () => {
+  useEffect(() => {
+    const scrollToSection = (sectionId) => {
+      const section = document.getElementById(sectionId);
+      console.log(section);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    };})
   return (
     <header>
       <nav>
@@ -25,7 +34,7 @@ const Navbar = () => {
             <NavLink
             to="/PreguntasFrecuentes#section1"
          
-            onClick={() => scrollToSection('section1')} className="Option-Nav" activeclassname="active"
+            onClick={() => scrollToSection ('section1')} className="Option-Nav" activeclassname="active"
           >Preguntas Frecuentes </NavLink>
             
            </li>
@@ -41,7 +50,7 @@ const Navbar = () => {
       </nav>
     </header>
   );
-};
+  };
 
 export default Navbar;
 

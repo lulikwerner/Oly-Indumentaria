@@ -5,7 +5,7 @@ import Footer from './components/Footer/Footer';
 import WhatsApp from './components/whatsApp/whatsApp';
 import CustomContainer from './components/Container/Container';
 import FAQS from './components/FAQS/FAQS';
-import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
