@@ -6,6 +6,7 @@ import WhatsApp from './components/whatsApp/whatsApp';
 import CustomContainer from './components/Container/Container';
 import FAQS from './components/FAQS/FAQS';
 
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/PreguntasFrecuentes" element={<FAQS />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+      
       <Footer className="footer-container" />
     </Router>
   );

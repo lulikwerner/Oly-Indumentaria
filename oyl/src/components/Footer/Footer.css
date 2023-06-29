@@ -9,6 +9,9 @@
     position: absolute;
    
 }
+.arrow-cursor {
+  cursor: pointer;
+}
 .line-container p {
     margin-bottom: 8%;
     flex-basis: 50%;

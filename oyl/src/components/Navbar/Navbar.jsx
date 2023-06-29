@@ -4,20 +4,17 @@ import logo from '../../../public/assets/img/logo.png';
 import '../Navbar/Navbar.css';
 
 const Navbar = () => {
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    console.log(section);
-    if (section) {
+    const scrollToSection = () => {
+      const section = document.querySelector('#section5');
       section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
+    };
+    const scrollToSectionNav = () => {
+      const section = document.querySelector('#section6');
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
+    
 
-  useEffect(() => {
-    // Any other logic you may have inside the useEffect hook
 
-    // Example usage of scrollToSection
-    scrollToSection('sectionIdHere');
-  }, []);
 
   return (
     <header>
@@ -31,7 +28,7 @@ const Navbar = () => {
           <input type="checkbox" id="check" />
           <div className="menu">
             <li className="inicio">
-              <NavLink to="/" className="Option-Nav" activeClassName="active">
+              <NavLink to="/"  onClick={scrollToSectionNav } className="Option-Nav" activeClassName="active">
                 Inicio
               </NavLink>
             </li>
@@ -42,8 +39,8 @@ const Navbar = () => {
             </div>
             <li className="pregFrec">
               <NavLink
-                to="/PreguntasFrecuentes#section5"
-                onClick={() => scrollToSection('section5')}
+                to="/PreguntasFrecuentes"
+                onClick={scrollToSection} 
                 className="Option-Nav"
                 activeClassName="active"
               >

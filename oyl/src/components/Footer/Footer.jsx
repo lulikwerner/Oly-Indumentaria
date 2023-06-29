@@ -1,11 +1,11 @@
 import React from 'react';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import '../Footer/Footer.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import { TiLocationOutline } from 'react-icons/ti';
 import { BsFacebook, BsInstagram, BsTiktok } from 'react-icons/bs'
 import {GoTriangleRight} from 'react-icons/go';
-import { Link } from "react-router-dom";
+import { Link, NavLink } from 'react-router-dom';
 
 function Footer() {
   const lauraSalasRepoUrl = 'https://www.behance.net/laurasalas9';
@@ -13,23 +13,26 @@ function Footer() {
   const lucilaWernerRepoUrl = 'https://lkwportafolio.netlify.app/';
   const giancarloOblitasoRepoUrl='https://www.linkedin.com/in/giancarlo-oblitas-60b77623b';
 
-  useEffect(() => {
-    const scrollToSection = (sectionId) => {
-      const section = document.getElementById(sectionId);
-      console.log(section);
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-      }
-    };
 
-    // Call scrollToSection after a delay to ensure the sections are rendered
-    setTimeout(() => {
-      scrollToSection('section1');
-      scrollToSection('section2');
-      scrollToSection('section3');
-      scrollToSection('section4');
-    }, 1000); // Adjust the delay as needed
-  }, []); 
+  const [isMobile, setIsMobile] = useState(false);
+  const handleScroll = (sectionId, offset) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const elementPosition = section.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset + offset;
+  
+      window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+    }
+  };
+  
+
+  const sectionOffsets = {
+    section1: isMobile ? -250 : -250,
+    section2: isMobile ? -250 : -200,
+    section3: isMobile ? -250 : -200,
+    section4: isMobile ? -250 : -200,
+    // Add more sections and offsets as needed
+  };
   return (
     <footer className="footer">
       <section className="top-container">
@@ -98,51 +101,31 @@ function Footer() {
               <h6 className="text-uppercase fw-bold mb-4 titR  custom-preg">PREGUNTAS FRECUENTES</h6>
               <p className="faq-item-q">
               <GoTriangleRight className="location-icon text" />
-              <Link
-            to="/PreguntasFrecuentes/#section1"
-            className="text-reset"
-            onClick={() => scrollToSection('section1')}
-          >
+              <NavLink to="/preguntasfrecuentes#section1" className="text-reset arrow-cursor" onClick={() => handleScroll('section1', sectionOffsets.section1)}>
             ¿QUIÉNES SOMOS?
-          </Link>
+          </NavLink>
               </p>
               <p className="faq-item-p">
               <GoTriangleRight className="location-icon text" />
-              <Link
-            to="/PreguntasFrecuentes#section2"
-            className="text-reset"
-            onClick={() => scrollToSection('section2')}
-          >
+              <Link to="/preguntasfrecuentes#section2" className="text-reset arrow-cursor" onClick={() => handleScroll('section2', sectionOffsets.section2)}>
              ¿COMO REALIZAR UN PEDIDO?
                 </Link>
               </p>
               <p className="faq-item-pa">
               <GoTriangleRight className="location-icon text" />
-              <Link
-            to="/PreguntasFrecuentes#section2"
-            className="text-reset"
-            onClick={() => scrollToSection('section2')}
-          >
+              <Link to="/preguntasfrecuentes#section2" className="text-reset arrow-cursor" onClick={() => handleScroll('section2', sectionOffsets.section2)}>
                PAGO
                   </Link>
               </p>
               <p className="faq-item-e">
               <GoTriangleRight className="location-icon text" />
-              <Link
-            to="/PreguntasFrecuentes#section3"
-            className="text-reset"
-            onClick={() => scrollToSection('section3')}
-          >
+              <Link to="/preguntasfrecuentes#section3" className="text-reset arrow-cursor" onClick={() => handleScroll('section3', sectionOffsets.section3)}>
                ENVÍO
                   </Link>
               </p>
               <p className="faq-item-c">
               <GoTriangleRight className="location-icon text" />
-              <Link
-            to="/PreguntasFrecuentes#section4"
-            className="text-reset"
-            onClick={() => scrollToSection('section4')}
-          >
+              <Link to="/preguntasfrecuentes#section4" className="text-reset arrow-cursor" onClick={() => handleScroll('section4', sectionOffsets.section4)}>
                CAMBIOS
                 </Link>
               </p>

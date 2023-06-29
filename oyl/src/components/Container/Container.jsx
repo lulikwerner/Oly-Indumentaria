@@ -8,7 +8,8 @@ import '../Container/Container.css'
 function CustomContainer() {
   return (
    
-    <div >
+    <div className="imf" id="section6" >
+      
         <img id="retrato"src={retratoPersona} alt="" className="responsive-image"/>
           <div className="itemCont">
                 <ItemListContainer />
