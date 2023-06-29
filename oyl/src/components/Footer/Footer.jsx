@@ -28,7 +28,7 @@ function Footer() {
       scrollToSection('section2');
       scrollToSection('section3');
       scrollToSection('section4');
-    }, 0); // Adjust the delay as needed
+    }, 1000); // Adjust the delay as needed
   }, []); 
   return (
     <footer className="footer">

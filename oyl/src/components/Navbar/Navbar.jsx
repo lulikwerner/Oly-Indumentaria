@@ -1,18 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../../../public/assets/img/logo.png';
 import '../Navbar/Navbar.css';
-import { useEffect } from 'react';
 
 const Navbar = () => {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    console.log(section);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   useEffect(() => {
-    const scrollToSection = (sectionId) => {
-      const section = document.getElementById(sectionId);
-      console.log(section);
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    };})
+    // Any other logic you may have inside the useEffect hook
+
+    // Example usage of scrollToSection
+    scrollToSection('sectionIdHere');
+  }, []);
+
   return (
     <header>
       <nav>
@@ -25,20 +31,25 @@ const Navbar = () => {
           <input type="checkbox" id="check" />
           <div className="menu">
             <li className="inicio">
-            <NavLink to="/" className="Option-Nav" activeclassname="active">Inicio</NavLink>
+              <NavLink to="/" className="Option-Nav" activeClassName="active">
+                Inicio
+              </NavLink>
             </li>
             <div className="produNav">
-          <a href="https://wa.me/+541136806292?text=hola%20lu%20te%20consulto%20por%20este%20producto" className="Option-Nav">Productos</a>
-        </div>
+              <a href="https://wa.me/+541136806292?text=hola%20lu%20te%20consulto%20por%20este%20producto" className="Option-Nav">
+                Productos
+              </a>
+            </div>
             <li className="pregFrec">
-            <NavLink
-            to="/PreguntasFrecuentes#section1"
-         
-            onClick={() => scrollToSection ('section1')} className="Option-Nav" activeclassname="active"
-          >Preguntas Frecuentes </NavLink>
-            
-           </li>
-          
+              <NavLink
+                to="/PreguntasFrecuentes#section5"
+                onClick={() => scrollToSection('section5')}
+                className="Option-Nav"
+                activeClassName="active"
+              >
+                Preguntas Frecuentes
+              </NavLink>
+            </li>
             <label htmlFor="check" className="close-menu">
               <i className="fas fa-times"></i>
             </label>
@@ -50,9 +61,10 @@ const Navbar = () => {
       </nav>
     </header>
   );
-  };
+};
 
 export default Navbar;
+
 
 
 
