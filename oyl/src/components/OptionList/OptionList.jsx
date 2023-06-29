@@ -5,7 +5,7 @@ import '../OptionList/OptionList.css';
 
 const OptionList = ({ options }) => {
   return (
-  <div className="Opt-list">
+    <div className="Opt-list">
       {options.map((opt) => (
         <Card key={opt.id} className="cardsPF">
           <Option opt={opt} />

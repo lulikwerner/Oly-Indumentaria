@@ -99,7 +99,7 @@ function Footer() {
               <p className="faq-item-q">
               <GoTriangleRight className="location-icon text" />
               <Link
-            to="/PreguntasFrecuentes#section1"
+            to="/PreguntasFrecuentes/#section1"
             className="text-reset"
             onClick={() => scrollToSection('section1')}
           >

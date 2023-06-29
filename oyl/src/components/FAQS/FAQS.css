@@ -7,11 +7,15 @@
     width: 100%;
   }
 
-  @media only screen and (max-width: 320px){
+  @media only screen and (max-width: 360px){
     .responsive-image {
       height: 200px;
-      width: 320px;
+      width: 360px;
     }
+    .containerPF{
+      width:330px;
+    }
+  
   }
 
   

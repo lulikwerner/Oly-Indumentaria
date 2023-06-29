@@ -9,7 +9,7 @@ function CustomContainer() {
   return (
    
     <div >
-        <img id="retrato"src={retratoPersona} alt="home" className="responsive-image"/>
+        <img id="retrato"src={retratoPersona} alt="" className="responsive-image"/>
           <div className="itemCont">
                 <ItemListContainer />
           </div>

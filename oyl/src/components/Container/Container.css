@@ -39,7 +39,7 @@
     width: 100%;
   }
 
-  @media only screen and (max-width: 320px){
+  @media only screen and (max-width: 360px){
     .container {
       margin: 0%; 
       position: relative;
@@ -49,14 +49,14 @@
       margin-bottom: 0%!important ;
     }
     .itemCont{
-      width: 320px;
+      width: 360px;
       margin: 0px;
       margin-top: 10px;
       padding: auto;
   
     }
     .favoritosCont {
-      margin-left: 3%;
+      margin-left: 8%;
       margin-bottom: 0%;
       top: 0px;
       width: 300px;
